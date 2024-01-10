@@ -1,0 +1,173 @@
+:root {
+    --rouge: #782221;
+    --noir: #2c1d27;
+    --beige: #dbc2a4;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../font/raleway/Raleway-VariableFont_wght.ttf) format("truetype"),
+    url(../font/raleway/Raleway-Italic-VariableFont_wght.ttf) format("truetype");
+}
+
+.container {
+    background-color: var(--rouge);
+    width: 1160px;
+    margin: auto;
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    box-sizing: content-box;
+}   
+
+header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+header h1,
+header h2,
+h3,
+h4 {
+    font-family: "Lato", sans-serif;
+}
+
+header #profile-picture {
+    background-image: url(../image/moi.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(44, 33, 33);
+}
+
+header #profile-picture a {
+    height: 100%;
+    width: 100%;
+}
+
+header #profile-picture:hover {
+    cursor: zoom-in;
+}
+
+
+.address {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    background-color: var(--noir);
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.address a{
+    text-decoration: none;
+    color: white;
+}
+
+
+address a:hover {
+    text-decoration-line: underline;
+}
+
+
+aside {
+    width: 387px;
+}
+
+aside section {
+    width: 340px;
+}
+
+aside section h3 {
+    background-color : var(--beige);
+    text-indent: 15px;
+}
+
+.aside .aside__about p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.aside__about p,
+.aside__language ul,
+.aside__hobbies ul,
+.aside__about ol {
+    color: white;
+}
+
+main {
+    background-color: white;
+    width: 774px;
+    border-right: solid 1px black;
+}
+
+.main-information {
+    display: flex;
+}
+
+main section h3 {
+    background-color: var(--beige);
+    text-indent: 15px;
+    border-left: 7px solid var(--rouge);
+}
+
+main section:hover {
+    border-right: 2px solid var(--rouge)
+}
+
+main section {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+footer {
+    height: 120px;
+}
+
+
+footer nav a div {
+    height: 70px;
+    width: 70px;
+}
+
+footer nav a div:hover {
+    opacity: 50%;
+}
+
+footer nav .github .github__icon {
+    background-image: url(../icon/github.png);
+    background-size: cover;
+}
+footer nav .twitter .twitter__icon {
+    background-image: url(../icon/twitter.png);
+    background-size: cover;
+}footer nav .linkedin .linkedin__icon {
+    background-image: url(../icon/linkedin.png);
+    background-size: cover;
+}
+
+footer nav {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer p {
+    text-align: center;
+}
